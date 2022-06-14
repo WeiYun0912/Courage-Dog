@@ -1,0 +1,117 @@
+
+footer{
+	padding: 10px;
+	margin-top: 550px;
+	color: #ffffff;
+	background-color: rgba(255, 0, 191,0.1);
+	text-align: center;
+}
+
+span{
+	color:  rgba(255, 0, 191,0.8)
+}
+.bgImg{
+	background-image: url('../img/house2.jpg');
+	position: absolute;/*讓背景圖片不會因為內容而壓縮 但scroll bar 會消失*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	font-family: 微軟正黑體;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-y:scroll; /*用scroll div包住整個html 顯示scroll bar */
+	height: 100%;
+}
+
+
+
+
+
+
+.BigTitle img{
+	width: 33%;
+	margin-left: 5%;
+	margin-top: 5%;
+
+}
+
+#showcase{
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#showcase .container img{
+	margin-left: 50%;
+}
+
+.pic{
+
+	position: relative;
+	margin-top: 20%;
+	margin-left: 30%;
+}
+
+
+.container .pic ul{
+	max-width: 1050px;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+}
+
+.container .pic ul li{
+
+	margin-top: 0;
+	margin:15px;
+	position: relative;
+	cursor: pointer;
+	float:left;
+	display: inline;
+	list-style: none;
+	padding: 0 20px 0 20px; /*右左20px(上右下左)*/
+}
+
+.audio{
+	margin-left: 15%;
+}
+
+
+@media(max-width: 768px){
+	.bgImg{
+
+	}
+	.BigTitle img
+	{
+		float: none;
+		text-align: center;
+		width: 90%;
+	}
+/*	body{
+		background-image: url('../img/house2.jpg');
+		overflow-y: visible;
+		background-position: center;
+		}*/
+
+		.pic{
+			width: 75%;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.audio{
+			width:75%;
+			margin-left: auto;
+			margin-left: auto;
+		}
+		footer{
+			padding: 10px;
+			width: 100%;
+			margin-top: 1000px;
+			color: #ffffff;
+			background-color: rgba(255, 0, 191,0.1);
+			text-align: center;
+		}
+
+	}
+

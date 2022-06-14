@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style type="text/css">
+/*	body{
+		background-image: url('../Courage/img/house2.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;	
+		background-position: center center;
+	}*/
+	*{
+		user-select: none;
+	}
+	html,body{
+		padding: 0;
+		margin: 0;
+		height: 100%;
+	}
+	.BigTitle img{
+		width: 50%;
+		position: relative;
+		left: 25%;
+	}
+
+	.container{
+		max-width: 1000px;
+		margin: 50px auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.card{
+		position: relative;
+		margin: 20px 0;
+		width: 300px;
+		height: 400px;
+		background: #fff;
+		transform-style: preserve-3d;
+		transform: perspective(2000px);
+		transition: 1s;
+		box-shadow: inset 300px 0 50px rgba(0,0,0,.5);
+	}
+
+	.card:hover{
+		z-index: 1000;
+		transform: perspective(2000px) rotate(-10deg);
+		box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
+	}
+
+	.card .imgBox{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		border: 1px solid #000;
+		box-sizing: border-box;
+		transform-origin: left;
+		z-index: 1;
+		transition: 1s;
+	}
+
+	.card:hover .imgBox{
+		transform: rotateY(-135deg);
+	}
+
+	.card .imgBox .img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+	}
+
+	.card .details{
+		background-image: url('../Courage/img/Book/temp.png');
+		opacity: 0.6;
+		background-repeat: no-repeat;
+		background-size: cover;	
+		background-position: center center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		box-sizing: border-box;
+		padding: 20px;
+		height: 100%;
+	}
+
+	.details h2{
+		color: white;
+		font-weight: 600;
+	}
+
+	.details p{
+		color: white;
+		font-weight: 600;
+	}
+
+	@media(max-width: 768px){
+		.BigTitle img
+		{
+			width: 80%;
+			left: 10%;
+		}
+	}
+
+	.bgImg{
+		background-image: url('../Courage/img/house2.jpg');
+		position: absolute;/*讓背景圖片不會因為內容而壓縮 但scroll bar 會消失*/
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		font-family: 微軟正黑體;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow-y:scroll; /*用scroll div包住整個html 顯示scroll bar */
+		height: 100%;
+	}
+</style>
+</head>
+<body>
+<div class="bgImg">
+	<div class="container">
+		<header>
+			<div class="BigTitle">
+				<a href="index.php"><img src="img/logo.png" class="img-fluid"></a>
+			</div>
+		</header>
+		<div class="card">
+			<div class="imgBox">
+				<img src="img/Book/bk1.png" width="300" height="400">
+			</div>
+			<div class="details">
+			<h2>WE ARE GIANTS</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ult laborum.</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="imgBox">
+			<img src="img/Book/bk2.png" width="300" height="400">
+		</div>
+		<div class="details">
+			<h2>The Mysterious Lake Bandit</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt caecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="imgBox">
+			<img src="img/Book/bk3.png" width="300" height="400">
+		</div>
+		<div class="details">
+			<h2>THE WILD ROBOT</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco est laborum.</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="imgBox">
+			<img src="img/Book/bk4.png" width="300" height="400">
+		</div>
+		<div class="details">
+			<h2>Dr.Seuss</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				d est laborum.</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="imgBox">
+			<img src="img/Book/bk5.png" width="300" height="400">
+		</div>
+		<div class="details">
+			<h2>The Little Wizards</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididu occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="imgBox">
+			<img src="img/Book/bk6.png" width="300" height="400">
+		</div>
+		<div class="details">
+			<h2>HISTOIRES</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laborism.</p>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+
+.bgImg{
+  background-image: url('../img/house2.jpg');
+  position: absolute;/*讓背景圖片不會因為內容而壓縮 但scroll bar 會消失*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: 微軟正黑體;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  overflow-y:scroll; /*用scroll div包住整個html 顯示scroll bar */
+  height: 100%;
+}
+
+.BigTitle img{
+	display: block;
+	margin: auto;
+}
+
+
+/*黑框透明*/
+.Grid{ 
+	background-color: #000000;  
+	opacity: 0.7;
+	width: 100%;
+	top:0;
+	height: 80%;
+	
+}
+
+/*角色名稱(標題)*/
+.white-text{
+	color: #ffffff;
+	font-weight: bold;
+
+}
+
+.white-text-right{
+  color: #ffffff;
+  font-weight: bold;
+  text-align: right;
+}
+
+/*角色名稱(圖片下方)*/
+.img-text{
+	
+	background-color: #6f027c;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+}
+
+/*水平線*/
+.gray-line{
+	background-color: #333333;
+}
+
+.white-line{
+  border: 0;
+  border-bottom: 2px solid white;
+}
+
+/*圖片 讓文字靠右*/
+.img-right{
+	float: left;
+  margin-right: 2em;
+
+}
+
+.img-left{
+  float: right;
+  margin-left: 2em;
+}
+
+.p-right{
+	color: #ffffff;
+	font-weight: bold;
+	margin-right: 1em;
+ word-wrap:break-word;
+ line-height: 50px;
+
+}
+
+.p-left{
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 1em;
+  word-wrap:break-word;
+  line-height: 50px;
+
+}
+
+.position-left{
+	margin-left: 50px;
+}
+
+.position-right{
+  margin-right: 50px;
+}
+
+
+
+.mid{
+  vertical-align: middle;
+}
+
+.videosize{
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+a.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  position: fixed; /*跟著畫面動*/
+  bottom:20px;
+  right: 10px;
+  background: url("../img/Up.png") no-repeat center 43%;
+  border-radius: 30px;
+}
+
+.middle{
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+} 
+@media(max-width: 768px){
+
+  .bgImg{
+    overflow-x: hidden;
+  }
+
+  .BigTitle img
+  {
+    float: none;
+    text-align: center;
+    width: 90%;
+  }
+
+  
+  .pic{
+    width: 70%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  footer{
+    padding: 10px;
+    margin-top: 1000px;
+    color: #ffffff;
+    background-color: rgba(255, 0, 191,0.1);
+    text-align: center;
+  }
+  
+  .gray-line{
+    display: none;
+  }
+
+  iframe{
+    width: 100%;
+  }
+  .middle{
+    width: 100%;
+  }
+  
+  .Grid{
+    width: 100%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  
+  img{
+    width: 95%;
+  }
+  
+  .white-text-right,
+  .white-text{
+    text-align: center;
+  }
+  
+  .p-left{
+    margin-left: 50px;
+  }
+
+  .img-left{
+    margin-left: 50px;
+  }
+/*  .p-left,
+  .p-right{
+    display: block;
+    margin: auto;
+    }*/
+
+
+
+
+  }
+
+
+
+

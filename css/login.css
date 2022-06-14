@@ -1,0 +1,68 @@
+label{
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+
+}
+
+.bgImg{
+	background-image: url('../img/registerbk.jpg');
+
+	position: absolute;/*讓背景圖片不會因為內容而壓縮 但scroll bar 會消失*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	font-family: 微軟正黑體;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-y:scroll; /*用scroll div包住整個html 顯示scroll bar */
+	height: 100%;
+}
+
+
+
+.BigTitle{
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.white-text{
+	color: #ffffff;
+	font-weight: bold;
+
+}
+.cm_form{
+	margin-top: 10%;
+}
+
+.login_information{
+	margin-top: 20%;
+}
+
+.logout{
+	display: block;
+	margin: 0 auto;
+}
+
+.cm_form_register{
+	margin-top: 10%;
+}
+
+.disapper{
+	display: none;
+}
+
+@media(max-width: 768px){
+	.cm_form{
+		margin-top: 40%;
+	}
+
+	.cm_form_register{
+		margin-top: 0;
+	}
+
+	
+}
+
+
